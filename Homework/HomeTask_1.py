@@ -9,6 +9,8 @@
 a = int(input('Введите цифру обозначающую день недели = '))
 if a == 6 or a == 7:
     print("Yes")
+elif a > 7:
+    print('нет такой недели') 
 else:
     print("No")
 
