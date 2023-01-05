@@ -3,3 +3,13 @@
 # 1 - 1 * 1, 2 - 1 * 2, 3 - 1 * 2 * 3, 4 - 1 * 2 * 3 * 4 и т.д.
 # - 4 -> [1, 2, 6, 24]
 # - 6 -> [1, 2, 6, 24, 120, 720]
+
+num = int(input())
+result = 1
+num_list =[]
+
+for i in range(num):
+    result *= i+1
+    num_list.append(result)
+
+print(num_list)    

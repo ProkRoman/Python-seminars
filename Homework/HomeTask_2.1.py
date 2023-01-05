@@ -5,3 +5,16 @@
 # - 6782 -> 23
 # - 0.67 -> 13
 # - 198.45 -> 27
+
+num = input()
+sum = 0 
+
+n = len(num) - 2
+num = float(num)
+num *= int(10**n)
+
+while num:
+    sum += int(num % 10)
+    num //= 10
+
+print(int(sum))    
